@@ -267,10 +267,10 @@ class MainForm(Form):
 		Change = Amount - Price
 		Dollars = change / 1
 		Dollars = round(Dollars, 1)
-		Quarters = change - Dollars
-		Quarters = Quarters / .25
+		if change > 1:
+			Change - Dollars
 		Dimes = 
-		Dimes = Dimes / 
+		Dimes = 
 		Nickles = 
 		Pennies = 
 		
