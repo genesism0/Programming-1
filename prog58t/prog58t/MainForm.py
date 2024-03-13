@@ -265,17 +265,15 @@ class MainForm(Form):
 		Price = int(self._textBox1.Text)
 		Amount = int(self._textBox2.Text)
 		Change = Amount - Price
-		Dollars = change / 1
+		Dollars = Change / 1
 		Dollars = round(Dollars, 1)
-		if change > 1:
-			Change - Dollars
 		Dimes = 
 		Dimes = 
 		Nickles = 
 		Pennies = 
 		
 		
-		self._label4.Text = str(change)
+		self._label4.Text = str(Change)
 		self._label10.Text = str(Dollars)
 		self._label11.Text = str(Quarters)
 		self._label12.Text = str(Dimes)
