@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -26,7 +27,7 @@ class MainForm(Form):
 		# 
 		self._button1.BackColor = System.Drawing.Color.DarkSeaGreen
 		self._button1.Font = System.Drawing.Font("Modern No. 20", 20.2499981, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button1.Location = System.Drawing.Point(234, 147)
+		self._button1.Location = System.Drawing.Point(234, 59)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(128, 39)
 		self._button1.TabIndex = 0
@@ -38,12 +39,13 @@ class MainForm(Form):
 		# 
 		self._button2.BackColor = System.Drawing.Color.DarkSeaGreen
 		self._button2.Font = System.Drawing.Font("Modern No. 20", 20.2499981, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button2.Location = System.Drawing.Point(234, 52)
+		self._button2.Location = System.Drawing.Point(234, 147)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(128, 39)
 		self._button2.TabIndex = 1
 		self._button2.Text = "Exit"
 		self._button2.UseVisualStyleBackColor = False
+		self._button2.Click += self.Button2Click
 		# 
 		# button3
 		# 
@@ -55,6 +57,7 @@ class MainForm(Form):
 		self._button3.TabIndex = 2
 		self._button3.Text = "Clear"
 		self._button3.UseVisualStyleBackColor = False
+		self._button3.Click += self.Button3Click
 		# 
 		# textBox1
 		# 
@@ -141,7 +144,7 @@ class MainForm(Form):
 		self.Controls.Add(self._button1)
 		self.Name = "MainForm"
 		self.Text = "prog58b"
-		self.Load += self.MainFormLoad
+		
 		self.ResumeLayout(False)
 		self.PerformLayout()
 
@@ -150,4 +153,18 @@ class MainForm(Form):
 		A = int(self._textBox1.Text)
 		B = int(self._textBox2.Text)
 		C = int(self._textBox3.Text)
-		root1 = (-B + sqrtB
+		root1 = (-B + math.sqrt(B^2 - 4(A)(C)))/2(A)
+		root2 = (-B - math.sqrt(B^2 - 4(A)(C)))/2(A)
+		self._label2.Text = str(root1)
+		self._label4.Text = str(root2)
+		
+
+	def Button3Click(self, sender, e):
+		self._textBox1.Text = ""
+		self._textBox2.Text = ""
+		self._textBox3.Text = ""
+		self._label2.Text = ""
+		self._label4.Text = ""
+
+	def Button2Click(self, sender, e):
+		Application.Exit()
