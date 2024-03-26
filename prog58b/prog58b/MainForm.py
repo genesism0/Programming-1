@@ -153,10 +153,10 @@ class MainForm(Form):
 		A = int(self._textBox1.Text)
 		B = int(self._textBox2.Text)
 		C = int(self._textBox3.Text)
-		root1 = (-B + math.sqrt(B^2 - 4(A)(C)))/2(A)
-		root2 = (-B - math.sqrt(B^2 - 4(A)(C)))/2(A)
-		self._label2.Text = str(root1)
-		self._label4.Text = str(root2)
+		Root1 = (-B + math.sqrt(B**2 - 4 * A * C))/2*A
+		Root2 = (-B - math.sqrt(B**2 - 4 * A * C))/2*A
+		self._label2.Text = str(Root1)
+		self._label4.Text = str(Root2)
 		
 
 	def Button3Click(self, sender, e):

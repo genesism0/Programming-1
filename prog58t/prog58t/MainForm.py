@@ -265,8 +265,8 @@ class MainForm(Form):
 		Price = int(self._textBox1.Text)
 		Amount = int(self._textBox2.Text)
 		Change = Amount - Price
-		Dollars = Change / 1
-		Dollars = round(Dollars, 1)
+		Dollars =
+		Dollars =
 		Dimes = 
 		Dimes = 
 		Nickles = 
