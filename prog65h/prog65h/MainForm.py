@@ -44,6 +44,7 @@ class MainForm(Form):
 		self._button2.TabIndex = 1
 		self._button2.Text = "Clear"
 		self._button2.UseVisualStyleBackColor = False
+		self._button2.Click += self.Button2Click
 		# 
 		# button3
 		# 
@@ -160,4 +161,13 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		num1 = int(self.textBox1.Text)
+		pounds = int(self.textBox1.Text)
+		shillings = int(self.textBox2.Text)
+		pence = int(self.textBox2.Text)
+		
+
+	def Button2Click(self, sender, e):
+		self._textBox1.Text = ""
+		self._textBox2.Text = ""
+		self._textBox3.Text = ""
+		self._label5.Text = ""
