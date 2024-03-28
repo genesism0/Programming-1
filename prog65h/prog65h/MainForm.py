@@ -163,7 +163,7 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		pounds = int(self.textBox1.Text)
 		shillings = int(self.textBox2.Text)
-		pence = int(self.textBox2.Text)
+		pence = int(self.textBox2.Text)82a
 		
 
 	def Button2Click(self, sender, e):
