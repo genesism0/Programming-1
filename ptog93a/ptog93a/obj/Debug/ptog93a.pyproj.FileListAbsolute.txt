@@ -1,0 +1,12 @@
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\obj\Debug\ptog93a.pyprojResolveAssemblyReference.cache
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\obj\Debug\ptog93a.MainForm.resources
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\obj\Debug\ptog93a.pyproj.GenerateResource.Cache
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\ptog93a.exe.config
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\ptog93a.exe
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\ptog93a.dll
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\IronPython.dll
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\IronPython.Modules.dll
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\Microsoft.Scripting.dll
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\moreljuarez.g\Desktop\Programming-1\ptog93a\ptog93a\obj\Debug\ptog93a.exe
