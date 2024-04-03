@@ -191,17 +191,21 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		Kilowatts = int(self._textBox1.Text)
-		baseR = Kilowatts  *4.75
+		baseR = Kilowatts  * 0.0475
+		baseR = round(baseR, 2)
 		surcharge = baseR * 0.1
+		surcharge = round(surcharge, 2)
 		cityT = baseR * 0.03
+		cityT = round(cityT, 2)
 		total = baseR + surcharge + cityT
-		lateF = total * 0.04
+		lateF = total + total * 0.04
+		lateF = round(lateF, 2)
 		
-		self._label3.Text = float(baseR)
-		self._label5.Text = float(surcharge)
-		self._label7.Text = float(cityT)
-		self._label9.Text = float(total)
-		self._label11.Text = float(lateF)
+		self._label3.Text = str(baseR)
+		self._label5.Text = str(surcharge)
+		self._label7.Text = str(cityT)
+		self._label9.Text = str(total)
+		self._label11.Text = str(lateF)
 
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
