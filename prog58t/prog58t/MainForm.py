@@ -61,7 +61,7 @@ class MainForm(Form):
 		self._textBox1.Name = "textBox1"
 		self._textBox1.Size = System.Drawing.Size(113, 35)
 		self._textBox1.TabIndex = 2
-		self._textBox1.TextChanged += self.TextBox1TextChanged
+		
 		# 
 		# textBox2
 		# 
@@ -72,7 +72,7 @@ class MainForm(Form):
 		self._textBox2.Name = "textBox2"
 		self._textBox2.Size = System.Drawing.Size(113, 35)
 		self._textBox2.TabIndex = 3
-		self._textBox2.TextChanged += self.TextBox2TextChanged
+		
 		# 
 		# button1
 		# 
@@ -122,7 +122,7 @@ class MainForm(Form):
 		self._label4.Name = "label4"
 		self._label4.Size = System.Drawing.Size(113, 35)
 		self._label4.TabIndex = 8
-		self._label4.Click += self.Label4Click
+	
 		# 
 		# label5
 		# 
@@ -181,7 +181,7 @@ class MainForm(Form):
 		self._label10.Name = "label10"
 		self._label10.Size = System.Drawing.Size(99, 23)
 		self._label10.TabIndex = 14
-		self._label10.Click += self.Label10Click
+		
 		# 
 		# label11
 		# 
@@ -190,7 +190,7 @@ class MainForm(Form):
 		self._label11.Name = "label11"
 		self._label11.Size = System.Drawing.Size(98, 23)
 		self._label11.TabIndex = 15
-		self._label11.Click += self.Label11Click
+		
 		# 
 		# label12
 		# 
@@ -199,7 +199,7 @@ class MainForm(Form):
 		self._label12.Name = "label12"
 		self._label12.Size = System.Drawing.Size(100, 23)
 		self._label12.TabIndex = 16
-		self._label12.Click += self.Label12Click
+		
 		# 
 		# groupBox1
 		# 
@@ -228,7 +228,7 @@ class MainForm(Form):
 		self._label13.Name = "label13"
 		self._label13.Size = System.Drawing.Size(100, 23)
 		self._label13.TabIndex = 17
-		self._label13.Click += self.Label13Click
+		
 		# 
 		# label14
 		# 
@@ -237,7 +237,7 @@ class MainForm(Form):
 		self._label14.Name = "label14"
 		self._label14.Size = System.Drawing.Size(100, 23)
 		self._label14.TabIndex = 18
-		self._label14.Click += self.Label14Click
+
 		# 
 		# MainForm
 		# 
@@ -262,22 +262,42 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		Price = int(self._textBox1.Text)
-		Amount = int(self._textBox2.Text)
+		Price = float(self._textBox1.Text)
+		Amount = float(self._textBox2.Text)
 		Change = Amount - Price
-		Dollars = change//
-		quarters = 
-		Dimes = 
-		Dimes = 
-		Nickles = 
-		Pennies = 
+		
+		if Change >= 1:
+			Dollars = Change // 1
+		if Change < 1:
+			Dollars = 0
+			
+			
+		if Change - Dollars >= .25:
+			Quarters = Change - Dollars // .25
+		else:
+			Quarters = 0
+			
+			
+			
+		if Change - Dollars / .25 >= .10:
+			Dimes = Change - Dollars / .25 / .10
+		if Change - Dollars / .25 < .10:
+			Dimes = 0
+		if Change - Dollars / .25 / .10 >= .05:
+			N = Change - Dollars / .25 / .10 / .05
+		if Change - Dollars / .25 / .10 < .05:
+			N = 0
+		if Change - Dollars / .25 / .10 / .05 >= .01:
+			Pennies = Change - Dollars / .25 / .10 / .05 / .01
+		if Change - Dollars / .25 / .10 / .05 < .01:
+			Pennies = 0
 		
 		
 		self._label4.Text = str(Change)
 		self._label10.Text = str(Dollars)
 		self._label11.Text = str(Quarters)
 		self._label12.Text = str(Dimes)
-		self._label13.Text = str(Nickels)
+		self._label13.Text = str(N)
 		self._label14.Text = str(Pennies)
 
 	def Button2Click(self, sender, e):
@@ -293,28 +313,5 @@ class MainForm(Form):
 	def Button3Click(self, sender, e):
 		Applicaton.Exit()
 
-	def TextBox1TextChanged(self, sender, e):
-		pass
-
-	def TextBox2TextChanged(self, sender, e):
-		pass
-
-	def Label4Click(self, sender, e):
-		pass
-
-	def Label10Click(self, sender, e):
-		pass
-
-	def Label11Click(self, sender, e):
-		pass
-
-	def Label12Click(self, sender, e):
-		pass
-
-	def Label13Click(self, sender, e):
-		pass
-
-	def Label14Click(self, sender, e):
-		pass
 	
 	float # decimal
