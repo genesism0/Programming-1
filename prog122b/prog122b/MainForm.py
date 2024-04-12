@@ -66,11 +66,15 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		Heading = "Hours"   "Pay"
-		self._listBox1.Text(heading)
+		heading = "Hours" + "\t"   "Pay"
+		self._listBox1.Items.Add(heading)
+		for num in range(1, 40+1):
+			nearned = num*4
+			msg = str(num) + "\t" + str(nearned)
+			self._listBox1.Items.Add(msg)
 
 	def Button2Click(self, sender, e):
-		pass
+		self._listBox1.Items.Clear()
 
 	def Button3Click(self, sender, e):
 		Application.Exit()
