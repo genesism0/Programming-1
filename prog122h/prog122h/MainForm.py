@@ -79,9 +79,9 @@ class MainForm(Form):
 			sq = math.sqrt(num)
 			sq = round(sq, 4)
 			cube = num**3
-			Froot = sq**4
+			Froot = num**0.25
 			Froot = round(Froot, 4)
-			cal = str(num) + "\t" + str(square) + "\t" + str(sq) + "\t" + str(cube) + "\t" + str(Froot)
+			cal = str(num) + "\t" + str(square) + "\t" + str(sq) + "\t\t" + str(cube) + "\t" + str(Froot)
 			self._listBox1.Items.Add(cal)
 			
 
