@@ -1,0 +1,3 @@
+C:\Users\moreljuarez.g\Desktop\Programming-1\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyprojResolveAssemblyReference.cache
+C:\Users\moreljuarez.g\Desktop\Programming-1\SlotMachine\SlotMachine\obj\Debug\SlotMachine.MainForm.resources
+C:\Users\moreljuarez.g\Desktop\Programming-1\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyproj.GenerateResource.Cache
