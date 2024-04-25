@@ -55,7 +55,6 @@ class MainForm(Form):
 		self._pictureBox1.Size = System.Drawing.Size(101, 144)
 		self._pictureBox1.TabIndex = 0
 		self._pictureBox1.TabStop = False
-		
 		# 
 		# pictureBox2
 		# 
@@ -81,6 +80,7 @@ class MainForm(Form):
 		# 
 		self._pictureBox4.BackColor = System.Drawing.Color.White
 		self._pictureBox4.BackgroundImage = resources.GetObject("pictureBox4.BackgroundImage")
+		self._pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._pictureBox4.Location = System.Drawing.Point(9, 157)
 		self._pictureBox4.Name = "pictureBox4"
 		self._pictureBox4.Size = System.Drawing.Size(331, 174)
@@ -92,12 +92,12 @@ class MainForm(Form):
 		# button1
 		# 
 		self._button1.BackgroundImage = resources.GetObject("button1.BackgroundImage")
+		self._button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
 		self._button1.Location = System.Drawing.Point(356, 12)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(141, 161)
 		self._button1.TabIndex = 4
 		self._button1.UseVisualStyleBackColor = True
-		self._button1.Visible = False
 		self._button1.Click += self.Button1Click
 		# 
 		# button2
@@ -229,6 +229,7 @@ class MainForm(Form):
 		# 
 		# progressBar1
 		# 
+		self._progressBar1.BackColor = System.Drawing.Color.DodgerBlue
 		self._progressBar1.Location = System.Drawing.Point(356, 308)
 		self._progressBar1.Maximum = 15000
 		self._progressBar1.Name = "progressBar1"
@@ -283,8 +284,8 @@ class MainForm(Form):
 		if money > 25:
 			MessageBox.Show("You failed to steal money!")
 		else:
-			money = float(self._label3.Text)
-			self._label3.Text = str(round(cmoeny + money, 2))
+			cmoney = float(self._label3.Text)
+			self._label3.Text = str(round(cmoney + money, 2))
 		pass
 
 	def Button1Click(self, sender, e):
@@ -305,7 +306,7 @@ class MainForm(Form):
 			MessageBox.Show("You must enter an amount to bet first!")
 			return
 		
-		money = float(self._label2.Text)
+		money = float(self._label3.Text)
 		bet = float(self._textBox1.Text)
 		money2 = money - bet
 		
@@ -317,9 +318,9 @@ class MainForm(Form):
 			MessageBox.Show("You dont have enough money!")
 		else:
 			self._button1.BackgroundImage = levOn
-			self._pictureBox4.Visisble = True
+			self._pictureBox4.Visible = True
 			self._timer1.Enabled = True
-			self._label2.Text = str(round(money2, 2))
+			self._label3.Text = str(round(money2, 2))
 			self._progressBar1.Value = 0
 			
 			num1 = self.num1
@@ -347,7 +348,7 @@ class MainForm(Form):
 			self.num1 = 0
 			self.num2 = 0 
 			self.num3 = 0
-			self._label2.Text = str(round(money2, 2))
+			self._label3.Text = str(round(money2, 2))
 			
 			if money2 <= 0:
 				MessageBox.Show("You ran out of cash!")
@@ -436,6 +437,7 @@ class MainForm(Form):
 			self._progressBar1.Increment(1)
 			if self._progressBar1.Value == self._progressBox.Maximum:
 				self._timer1.Enabled = False
+				self._pictureBox4.Visible = False
 				self._button1.BackgroundImage = levOff
 			
 		pass
