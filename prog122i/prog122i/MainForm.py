@@ -21,14 +21,14 @@ class MainForm(Form):
 		self._listBox1.FormattingEnabled = True
 		self._listBox1.Location = System.Drawing.Point(8, 9)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(228, 225)
+		self._listBox1.Size = System.Drawing.Size(269, 225)
 		self._listBox1.TabIndex = 0
 		# 
 		# button1
 		# 
 		self._button1.BackColor = System.Drawing.Color.DarkRed
 		self._button1.Font = System.Drawing.Font("Modern No. 20", 15.749999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button1.Location = System.Drawing.Point(242, 12)
+		self._button1.Location = System.Drawing.Point(283, 9)
 		self._button1.Name = "button1"
 		self._button1.Size = System.Drawing.Size(118, 63)
 		self._button1.TabIndex = 1
@@ -40,7 +40,7 @@ class MainForm(Form):
 		# 
 		self._button2.BackColor = System.Drawing.Color.DarkRed
 		self._button2.Font = System.Drawing.Font("Modern No. 20", 15.749999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button2.Location = System.Drawing.Point(242, 90)
+		self._button2.Location = System.Drawing.Point(283, 90)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(118, 64)
 		self._button2.TabIndex = 2
@@ -52,7 +52,7 @@ class MainForm(Form):
 		# 
 		self._button3.BackColor = System.Drawing.Color.DarkRed
 		self._button3.Font = System.Drawing.Font("Modern No. 20", 15.749999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-		self._button3.Location = System.Drawing.Point(242, 170)
+		self._button3.Location = System.Drawing.Point(283, 170)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(118, 64)
 		self._button3.TabIndex = 3
@@ -63,7 +63,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.IndianRed
-		self.ClientSize = System.Drawing.Size(372, 245)
+		self.ClientSize = System.Drawing.Size(413, 245)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -74,13 +74,13 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		heading = "Number\t\tCube Root\t\Cube"
-		self._listBox1.Add(heading)
+		heading = "Number\t\tCube Root\t\tCube"
+		self._listBox1.Items.Add(heading)
 		for num in range(-25, 25+1):
-			Croot = num**2
+			Croot = math.sqrt(num)
 			C = num**3
 			out = str(num) + "\t\t" + str(Croot) + "\t\t" + str(C)
-			self.listBox1.Items.Add(out)
+			self._listBox1.Items.Add(out)
 			
 
 	def Button2Click(self, sender, e):
