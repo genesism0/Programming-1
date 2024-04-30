@@ -80,7 +80,13 @@ class MainForm(Form):
 		self._listBox1.Items.Add(heading)
 		for num in range(-12, 16):
 			x = num
-			y = x**6-3(x)**5-93(x)**4+87(x)**3+1596(x)**2-1380(x)-2800
+			y = x**6
+			y = y -3(x)**5
+			y = y -93(x)**4
+			y = y +87(x)**3
+			y = y + 1596(x)**2
+			y = y -1380(x)
+			y = y -2800
 			output = str(num) + "\t" + str(y)
 			self._listBox1.Items.Add(output)
 
