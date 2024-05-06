@@ -74,10 +74,10 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		heading = "Number\t\tCube Root\t\tCube"
+		heading = "Number\t\tCube Root\tCube"
 		self._listBox1.Items.Add(heading)
 		for num in range(-25, 25+1):
-			cr = math.sqrt(num)**3
+			cr = num**(1.0/3)
 			cr = round(cr, 4)
 			C = num**3
 			out = str(num) + "\t\t" + str(cr) + "\t\t" + str(C)
