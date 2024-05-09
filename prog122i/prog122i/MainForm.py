@@ -77,7 +77,7 @@ class MainForm(Form):
 		heading = "Number\t\tCube Root\tCube"
 		self._listBox1.Items.Add(heading)
 		for num in range(-25, 25+1):
-			cr = num**(1.0/3)
+			cr = num**(1.0)/3
 			cr = round(cr, 4)
 			C = num**3
 			out = str(num) + "\t\t" + str(cr) + "\t\t" + str(C)
