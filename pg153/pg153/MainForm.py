@@ -125,7 +125,8 @@ class MainForm(Form):
 		annsalary = float(self._textBox1.Text)
 		payperiod = int(self._textBox2.Text)
 		decsalary = annsalary/payperiod
-		self._label4.Text = str(round(decsalary, 2))
+		decsalary = round(decsalary, 2)
+		self._label4.Text = str(decsalary)
 
 	def Button2Click(self, sender, e):
 		self._textBox1.Text = ""
