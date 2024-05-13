@@ -30,7 +30,7 @@ class MainForm(Form):
 		self._label1.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label1.Location = System.Drawing.Point(6, 27)
 		self._label1.Name = "label1"
-		self._label1.Size = System.Drawing.Size(67, 20)
+		self._label1.Size = System.Drawing.Size(76, 19)
 		self._label1.TabIndex = 0
 		self._label1.Text = "Score 1:"
 		# 
@@ -40,7 +40,7 @@ class MainForm(Form):
 		self._label2.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label2.Location = System.Drawing.Point(6, 63)
 		self._label2.Name = "label2"
-		self._label2.Size = System.Drawing.Size(67, 20)
+		self._label2.Size = System.Drawing.Size(76, 19)
 		self._label2.TabIndex = 1
 		self._label2.Text = "Score 2:"
 		# 
@@ -50,10 +50,10 @@ class MainForm(Form):
 		self._label3.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label3.Location = System.Drawing.Point(6, 93)
 		self._label3.Name = "label3"
-		self._label3.Size = System.Drawing.Size(67, 17)
+		self._label3.Size = System.Drawing.Size(76, 16)
 		self._label3.TabIndex = 2
 		self._label3.Text = "Score 3:"
-		self._label3.Click += self.Label3Click
+	
 		# 
 		# label4
 		# 
@@ -61,16 +61,17 @@ class MainForm(Form):
 		self._label4.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label4.Location = System.Drawing.Point(6, 123)
 		self._label4.Name = "label4"
-		self._label4.Size = System.Drawing.Size(67, 23)
+		self._label4.Size = System.Drawing.Size(76, 22)
 		self._label4.TabIndex = 1
 		self._label4.Text = "Average:"
 		# 
 		# textBox1
 		# 
-		self._textBox1.Location = System.Drawing.Point(88, 27)
+		self._textBox1.Font = System.Drawing.Font("Modern No. 20", 8.249999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._textBox1.Location = System.Drawing.Point(88, 26)
 		self._textBox1.Multiline = True
 		self._textBox1.Name = "textBox1"
-		self._textBox1.Size = System.Drawing.Size(100, 21)
+		self._textBox1.Size = System.Drawing.Size(109, 20)
 		self._textBox1.TabIndex = 3
 		# 
 		# groupBox1
@@ -92,35 +93,38 @@ class MainForm(Form):
 		# 
 		# textBox2
 		# 
+		self._textBox2.Font = System.Drawing.Font("Modern No. 20", 8.249999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._textBox2.Location = System.Drawing.Point(88, 63)
 		self._textBox2.Multiline = True
 		self._textBox2.Name = "textBox2"
-		self._textBox2.Size = System.Drawing.Size(100, 20)
+		self._textBox2.Size = System.Drawing.Size(109, 19)
 		self._textBox2.TabIndex = 4
 		# 
 		# textBox3
 		# 
+		self._textBox3.Font = System.Drawing.Font("Modern No. 20", 8.249999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._textBox3.Location = System.Drawing.Point(88, 94)
 		self._textBox3.Multiline = True
 		self._textBox3.Name = "textBox3"
-		self._textBox3.Size = System.Drawing.Size(100, 21)
+		self._textBox3.Size = System.Drawing.Size(109, 20)
 		self._textBox3.TabIndex = 5
-		self._textBox3.TextChanged += self.TextBox3TextChanged
+		
 		# 
 		# label5
 		# 
 		self._label5.BackColor = System.Drawing.Color.DarkOliveGreen
+		self._label5.Font = System.Drawing.Font("Modern No. 20", 8.249999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label5.Location = System.Drawing.Point(88, 123)
 		self._label5.Name = "label5"
-		self._label5.Size = System.Drawing.Size(100, 23)
+		self._label5.Size = System.Drawing.Size(109, 22)
 		self._label5.TabIndex = 6
-		self._label5.Text = "label5"
 		# 
 		# button1
 		# 
-		self._button1.Location = System.Drawing.Point(12, 193)
+		self._button1.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+		self._button1.Location = System.Drawing.Point(12, 181)
 		self._button1.Name = "button1"
-		self._button1.Size = System.Drawing.Size(85, 46)
+		self._button1.Size = System.Drawing.Size(91, 67)
 		self._button1.TabIndex = 1
 		self._button1.Text = "Calculate Average"
 		self._button1.UseVisualStyleBackColor = True
@@ -128,6 +132,7 @@ class MainForm(Form):
 		# 
 		# button2
 		# 
+		self._button2.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button2.Location = System.Drawing.Point(109, 181)
 		self._button2.Name = "button2"
 		self._button2.Size = System.Drawing.Size(106, 32)
@@ -138,6 +143,7 @@ class MainForm(Form):
 		# 
 		# button3
 		# 
+		self._button3.Font = System.Drawing.Font("Modern No. 20", 11.999999, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._button3.Location = System.Drawing.Point(109, 216)
 		self._button3.Name = "button3"
 		self._button3.Size = System.Drawing.Size(106, 32)
@@ -148,7 +154,7 @@ class MainForm(Form):
 		# 
 		# MainForm
 		# 
-		self.ClientSize = System.Drawing.Size(231, 267)
+		self.ClientSize = System.Drawing.Size(222, 255)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -166,6 +172,7 @@ class MainForm(Form):
 		Score3 = int(self._textBox3.Text)
 		ave = Score1 + Score2 + Score3
 		ave = ave / 3
+		ave = round(ave, 2)
 		self._label5.Text = str(ave)
 		
 

@@ -78,7 +78,7 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		heading = "x" + "\t" + "y"
 		self._listBox1.Items.Add(heading)
-		for num in range(-12, 16):
+		for num in range(-12, 16+1):
 			x = num
 			y = x**6 - 3*x**5 - 93*x**4 + 87*x**3 + 1596*x**2 - 1380*x - 2800
 			output = str(num) + "\t" + str(y)
