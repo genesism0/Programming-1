@@ -250,9 +250,11 @@ class MainForm(Form):
 		
 		if tmult.Enabled and tball.Enabled:
 			if e.KeyCode == Keys.W:
-				pass
+				self.flagleft = False
+				tleft.Enabled = True
 			elif e.KeyCode == Keys.S:
-				pass
+				self.flaleaft = True
+				tleft.Enabled = True
 	def MainFormLoad(self, sender, e):
 		""" TODO: ADD 3 UNIQUE SECRETS/CHEAT/EASTER EGGS IN TOTAL & FINISH MULTIPLAYER & SCOREBOARD & DUMMY AI"""
 		self.balld = 1

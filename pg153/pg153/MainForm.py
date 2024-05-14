@@ -122,9 +122,6 @@ class MainForm(Form):
 
 
 	def Button1Click(self, sender, e):
-		S = 0.0
-		P = 0
-		decsalary = 0.0
 		S = float(self._textBox1.Text)
 		P = int(self._textBox2.Text)
 		decsalary = S // P
